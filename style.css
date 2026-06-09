@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 1410px;
+    align-items: center;
+    padding: 40px;
+    animation: mix 2s forwards;
+    opacity: 0;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.yak{
+    height: auto;
+    width: 48px;
+}
+.du{
+    background-color: black;
+    width: 24px;
+    border-radius: 8px;
+    padding: 5px;
+}
+.se{
+    background-color: white;
+    border: none;
+}
+h1{
+    font-size: 80px;
+    letter-spacing: -3px;
+}
+p{
+    line-height: 25px;
+}
+.chor{
+    width: 254.25px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    height: 72px;
+}
+.panj{
+
+    width: 611px;
+    
+    animation: tu 2s forwards;
+    opacity: 0;
+}
+
+@keyframes mix{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes man{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.san{
+    animation: man 2s forwards;
+    opacity: 0;
+}
+@keyframes tu{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.du:hover{
+    background-color: grey;
+}
+.chor:hover{
+     background-color: rgb(165, 127, 55);
+}
+article{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    article{
+        flex-direction: column;
+    }
+    .panj{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+}
